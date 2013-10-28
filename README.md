@@ -1,12 +1,11 @@
 TruthMachine
 ========================================================
-Browser-based Sentential Logic Calculator
+### Browser-based Sentential Logic Calculator ###
 
-    "What is the case - a fact - is the existence of states of affairs."
-
-                                                    -- Ludwig Wittgenstein,
-                                                       Tractatus Logico-Philosophicus, p.2
-
+>   "What is the case - a fact - is the existence of states of affairs."
+>
+>                                                          -- Ludwig Wittgenstein,
+>                                                             Tractatus Logico-Philosophicus, p.2
 
 TruthMachine is a pure JavaScript browser based calculator for Sentential Logic
 (AKA Propositional Logic or Propositional Calculus). I've created it for fun
