@@ -1,0 +1,64 @@
+/**
+ * TruthMachine main stylesheet
+ */
+
+@errorbg: #ffe0e0;
+
+header {
+  h1, h2 {
+    margin: 10px;
+  }
+  font-size: 200%;
+  text-align: center;
+  font-family: Rokkitt, serif;
+  border-bottom: 1px dashed #aaa;
+}
+
+#main-calculator {
+  text-align: center;
+  margin: 20px 0;
+  #main-input, #main-go {
+    font-size: 20pt;
+  }
+}
+.rounded-corners (@radius: 10px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius:    @radius;
+  -ms-border-radius:     @radius;
+  -o-border-radius:      @radius;
+  border-radius:         @radius;
+}
+
+.error-pre {
+  .rounded-corners;
+  padding: 5px;
+  margin: 5px;
+  background-color: @errorbg;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  white-space: pre;
+  text-align: left;
+}
+
+#results {
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+  text-align: center;
+
+  .truth-table {
+    font-size: 16pt;
+    text-align: center;
+    margin: auto;
+    border-collapse: collapse;
+    min-width: 300px;
+    border: 1px solid black;
+
+    th, td {
+      border: 1px solid #aaaaaa;
+      padding: 5px;
+    }
+
+    th {
+      background-color: #eee;
+    }
+  }
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Truth Machine - Sentential Logic Truth Table Generator</title>
+    <meta charset="utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="application/javascript" src="js/jquery-2.0.3.min.js"></script>
+    <script type="application/javascript" src="js/truthmachine.js"></script>
+    <script type="application/javascript" src="js/sentential-logic.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Truth Machine</h1>
+        <h2>Sentential Logic Truth Table Generator</h2>
+    </header>
+    <div id="main-calculator">
+        <input id="main-input" type="text" />
+        <button id="main-go">Generate!</button>
+    </div>
+    <div id="results">
+
+    </div>
+    <div id="calc-help">
+        <p>You can use the following keys to type operators:</p>
+        <p>
+            <strong>*</strong> or <strong>.</strong> = conjunction;
+            <strong>v</strong> or <strong>|</strong> = disjunction;
+            <strong>&gt;</strong> = implication;
+            <strong>=</strong> = equivalence;
+            <strong>~</strong> or <strong>!</strong> = negation
+        </p>
+        <p>You can use (), {} and [] as parenthesis</p>
+        <p>You can use any alphabetic character (we recommend p, q, r, ...) as variables</p>
+    </div>
+
+</body>
+</html>
