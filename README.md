@@ -1,11 +1,11 @@
 TruthMachine
-========================================================
-### Browser-based Sentential Logic Calculator ###
+==========================================================
+#####   Browser-based Sentential Logic Calculator    #####
 
->   "What is the case - a fact - is the existence of states of affairs."
+>  "What is the case - a fact - is the existence of states of affairs."
 >
->                                                          -- Ludwig Wittgenstein,
->                                                             Tractatus Logico-Philosophicus, p.2
+>  -- Ludwig Wittgenstein,
+>     Tractatus Logico-Philosophicus, p.2
 
 TruthMachine is a pure JavaScript browser based calculator for Sentential Logic
 (AKA Propositional Logic or Propositional Calculus). I've created it for fun
@@ -32,7 +32,7 @@ symbols (yes, you may be used to different ones):
  - ≡ Equivalence
  - ⊃ Implication
 
-Whoever, the lexer/parser is based on Jison[http://zaach.github.io/jison/] so it
+Whoever, the lexer/parser is based on [Jison](http://zaach.github.io/jison/) so it
 should be relatively easy to add support for additional logical operators, as
 long as they are describable as a finite series of boolean arithmetic operations :P
 
@@ -47,7 +47,7 @@ LICENSE
 -------
 TruthMachine is distributed under the terms of the New BSD License. That means
 its free software - you are welcome to use it for any purpose with no strings
-attached (almost). You are more than encouraged to contribute. See LICENSE.md
+attached (almost). You are more than encouraged to contribute. See [LICENSE.md]
 for licensing details.
 
  (c) 2013 Shahar Evron, all rights reserved
