@@ -4,6 +4,10 @@
 
 @errorbg: #ffe0e0;
 
+body {
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
+}
+
 header {
   h1, h2 {
     margin: 10px;
@@ -21,6 +25,7 @@ header {
     font-size: 20pt;
   }
 }
+
 .rounded-corners (@radius: 10px) {
   -webkit-border-radius: @radius;
   -moz-border-radius:    @radius;
@@ -40,7 +45,6 @@ header {
 }
 
 #results {
-  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
   text-align: center;
 
   .truth-table {
@@ -61,4 +65,33 @@ header {
     }
   }
 
+}
+
+.help-keys {
+  span {
+    display: inline-block;
+    margin: 0 5px 5px 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    box-shadow: #ccc 1px 1px 3px;
+    border: 1px solid #f9f9f9;
+    .rounded-corners(5px);
+  }
+
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+}
+
+footer {
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+  border-top: 1px dashed #aaa;
 }

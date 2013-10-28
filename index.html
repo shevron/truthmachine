@@ -15,24 +15,29 @@
         <h2>Sentential Logic Truth Table Generator</h2>
     </header>
     <div id="main-calculator">
-        <input id="main-input" type="text" />
+        <input id="main-input" type="text" placeholder="e.g. 'p • ~p'" />
         <button id="main-go">Generate!</button>
     </div>
     <div id="results">
 
     </div>
-    <div id="calc-help">
-        <p>You can use the following keys to type operators:</p>
-        <p>
-            <strong>*</strong> or <strong>.</strong> = conjunction;
-            <strong>v</strong> or <strong>|</strong> = disjunction;
-            <strong>&gt;</strong> = implication;
-            <strong>=</strong> = equivalence;
-            <strong>~</strong> or <strong>!</strong> = negation
-        </p>
-        <p>You can use (), {} and [] as parenthesis</p>
-        <p>You can use any alphabetic character (we recommend p, q, r, ...) as variables</p>
-    </div>
+    <ul id="calc-help">
+        <li>You can use the following keys to type operators:
+        <ul class="help-keys">
+            <li><label>Negation:</label> <span>~</span> or <span>!</span></li>
+            <li><label>Conjunction:</label> <span>*</span> or <span>.</span></li>
+            <li><label>Disjunction:</label> <span>v</span> or <span>|</span></li>
+            <li><label>Implication:</label> <span>&gt;</span></li>
+            <li><label>Equivalence:</label> <span>=</span></li>
+        </ul>
+        </li>
+        <li>You can use (), {} and [] as parentheses</li>
+        <li>You can use any alphabetic character (you don't have to use 'p' and 'q'!) as variables</li>
+    </ul>
 
+    <footer>
+        <p>TruthMachine is &copy; copyright 2013 Shahar Evron, all rights reserved</p>
+        <p><a href="http://github.com/shevron/truthmachine">source code</a></p>
+    </footer>
 </body>
 </html>
