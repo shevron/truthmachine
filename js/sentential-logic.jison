@@ -27,22 +27,22 @@
 %% /* language grammar */
 
 sentence
-    : outerwfp EOF { return $1; }
+    : outerwff EOF { return $1; }
     ;
 
-outerwfp
-    : wfp
-    | wfp binaryconnector wfp { $$ = [$2, $1, $3]; }
+outerwff
+    : wff
+    | wff binaryconnector wff { $$ = [$2, $1, $3]; }
     ;
 
-wfp
+wff
     : atomicprop
         { $$ = $1; }
-    | '(' wfp ')'
+    | '(' wff ')'
         { $$ = $2; }
-    | '(' wfp binaryconnector wfp ')'
+    | '(' wff binaryconnector wff ')'
         { $$ = [$3, $2, $4]; }
-    | unaryconnector wfp
+    | unaryconnector wff
         { $$ = [$1, $2]; }
     ;
 
