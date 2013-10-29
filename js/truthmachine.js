@@ -167,7 +167,6 @@ TruthMachine.prototype.generateTable = function()
 {
     var bits = this._vars.length;
     if (bits == 0) return [];
-    var values = {};
 
     // First line of the table is headers: var columns and a result column
     var result = [ this._vars ];
@@ -176,16 +175,19 @@ TruthMachine.prototype.generateTable = function()
     // For 2^n rows
     for (var perms = Math.pow(2, bits) - 1; perms >= 0; perms--) {
         // Set values for each var
+        var values = {};
         var row = [];
-        for (var i = 1 << (bits - 1); i > 0; i = i >> 1) {
-            var val = !! (perms & i);
-            values[this._vars[bits - i]] = val;
+        for (var i = 0; i < bits; i++) {
+            var val = !! (perms & 1 << (bits - i - 1));
+            values[this._vars[i]] = val;
             row.push(val);
         }
+
         // Compute result for row
         row.push(this.compute(values));
         result.push(row);
     }
+
     return result;
 };
 
