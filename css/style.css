@@ -1,1 +1,117 @@
-header{text-align:center;border-bottom:1px dashed #aaa}header h1,header h2{margin:10px;font-family:Rokkitt,serif}header h1{font-size:58pt;font-weight:700}#main-calculator{text-align:left;margin:100px auto;width:670px}#main-calculator #main-input{float:left;width:450px;font-size:24pt}#main-calculator #main-go{float:right;width:200px;font-size:24pt}#main-calculator #main-links{clear:both;text-align:left;font-size:10pt}#main-calculator #main-links a{display:inline-block;margin:3px 5px 0 0;color:#666}.error-pre{-webkit-border-radius:10px;-moz-border-radius:10px;-ms-border-radius:10px;-o-border-radius:10px;border-radius:10px;padding:5px;margin:5px;background-color:#ffe0e0;font-family:Menlo,Monaco,Consolas,"Courier New",monospace;white-space:pre;text-align:left}#results{text-align:center}#results .truth-table{font-size:16pt;text-align:center;margin:auto;border-collapse:collapse;min-width:300px;border:1px solid #000}#results .truth-table th,#results .truth-table td{border:1px solid #aaa;padding:5px 10px}#results .truth-table th{text-align:center;background-color:#eee}#results .truth-table .state-true{background-color:#efe}#results .truth-table .state-false{background-color:#fee}#results .truth-table tbody tr:hover{background-color:#fff}.help-keys span{display:inline-block;margin:0 5px 5px 0;width:40px;height:40px;line-height:40px;text-align:center;background:#fff;box-shadow:#ccc 1px 1px 3px;border:1px solid #f9f9f9;-webkit-border-radius:5px;-moz-border-radius:5px;-ms-border-radius:5px;-o-border-radius:5px;border-radius:5px}.help-keys label{display:inline-block;width:100px}footer{font-size:12px;color:#aaa;text-align:center;padding:15px;margin:15px;border-top:1px dashed #aaa}
+/**
+ * TruthMachine main stylesheet
+ */
+header {
+  padding: 30px 0;
+  text-align: center;
+  border-bottom: 1px dashed #aaa;
+}
+header h1,
+header h2 {
+  margin: 0;
+  line-height: 1em;
+  font-family: Rokkitt, serif;
+}
+header h1 {
+  font-size: 60pt;
+}
+header h2 {
+  font-size: 30pt;
+}
+#main-calculator {
+  text-align: left;
+  margin: 50px auto;
+  width: 670px;
+}
+#main-calculator #main-input {
+  float: left;
+  width: 450px;
+  height: 38pt;
+  font-size: 22pt;
+}
+#main-calculator #main-go {
+  float: right;
+  width: 200px;
+  font-size: 20pt;
+}
+#main-calculator #main-links {
+  clear: both;
+  text-align: left;
+  font-size: 10pt;
+}
+#main-calculator #main-links a {
+  display: inline-block;
+  margin: 3px 5px 0 0;
+  color: #666;
+}
+.error-pre {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  background-color: #ffe0e0;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  white-space: pre;
+  text-align: left;
+}
+#results {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#results .truth-table {
+  font-size: 16pt;
+  text-align: center;
+  margin: auto;
+  border-collapse: collapse;
+  min-width: 300px;
+  border: 1px solid black;
+}
+#results .truth-table th,
+#results .truth-table td {
+  border: 1px solid #aaaaaa;
+  padding: 5px 10px;
+}
+#results .truth-table th {
+  text-align: center;
+  background-color: #eee;
+}
+#results .truth-table .state-true {
+  background-color: #eeffee;
+}
+#results .truth-table .state-false {
+  background-color: #ffeeee;
+}
+#results .truth-table tbody tr:hover {
+  background-color: #ffffff;
+}
+.help-keys span {
+  display: inline-block;
+  margin: 0 5px 5px 0;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: #fff;
+  box-shadow: #ccc 1px 1px 3px;
+  border: 1px solid #f9f9f9;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+.help-keys label {
+  display: inline-block;
+  width: 100px;
+}
+footer {
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+  border-top: 1px dashed #aaa;
+}
