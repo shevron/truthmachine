@@ -74,7 +74,7 @@
 var sententialLogic = (function(){
 var parser = {trace: function trace() { },
 yy: {},
-symbols_: {"error":2,"sentence":3,"outerwfp":4,"EOF":5,"wfp":6,"binaryconnector":7,"atomicprop":8,"(":9,")":10,"unaryconnector":11,"CON":12,"DIS":13,"IMP":14,"EQV":15,"NEG":16,"CONST":17,"VAR":18,"$accept":0,"$end":1},
+symbols_: {"error":2,"sentence":3,"outerwff":4,"EOF":5,"wff":6,"binaryconnector":7,"atomicprop":8,"(":9,")":10,"unaryconnector":11,"CON":12,"DIS":13,"IMP":14,"EQV":15,"NEG":16,"CONST":17,"VAR":18,"$accept":0,"$end":1},
 terminals_: {2:"error",5:"EOF",9:"(",10:")",12:"CON",13:"DIS",14:"IMP",15:"EQV",16:"NEG",17:"CONST",18:"VAR"},
 productions_: [0,[3,2],[4,1],[4,3],[6,1],[6,3],[6,5],[6,2],[7,1],[7,1],[7,1],[7,1],[11,1],[8,1],[8,1]],
 performAction: function anonymous(yytext, yyleng, yylineno, yy, yystate /* action[1] */, $$ /* vstack */, _$ /* lstack */) {
