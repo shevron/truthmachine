@@ -99,6 +99,7 @@ function renderTruthTable(container, table)
             var td = $('<td></td>').text(table[i][j] ? 'TRUE' : 'FALSE');
             tr.append(td);
         }
+        tr.addClass(table[i][cols - 1] ? 'state-true' : 'state-false');
         tbody.append(tr);
     }
 
