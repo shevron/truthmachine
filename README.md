@@ -6,10 +6,11 @@ TruthMachine
 >
 >  -- Ludwig Wittgenstein, Tractatus Logico-Philosophicus p.2
 
-TruthMachine is a pure JavaScript browser based calculator for Sentential Logic
-(AKA Propositional Logic or Propositional Calculus). I've created it for fun
-and because I wanted to play around with writing parsers instead of doing my
-Introduction to Formal Logic course homework.
+TruthMachine is a pure JavaScript browser based calculator for
+[Sentential Logic](http://www.iep.utm.edu/prop-log/) (AKA Propositional Logic
+or Propositional Calculus). I've created it for fun and because I wanted to
+play around with writing parsers instead of doing my Introduction to Formal
+Logic course homework.
 
 Initially the goal is to allow users to easily type in a Well-Formed Formula
 (WFF), parse it & validate it syntactically and generate a truth-table for
