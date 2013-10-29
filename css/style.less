@@ -19,10 +19,31 @@ header {
 }
 
 #main-calculator {
-  text-align: center;
-  margin: 20px 0;
-  #main-input, #main-go {
-    font-size: 20pt;
+  text-align: left;
+  margin: 100px auto;
+  width: 670px;
+
+  #main-input {
+    float: left;
+    width: 450px;
+    font-size: 24pt;
+  }
+
+  #main-go {
+    float: right;
+    width: 200px;
+    font-size: 24pt;
+  }
+
+  #main-links {
+    clear: both;
+    text-align: left;
+    font-size: 10pt;
+    a {
+      display: inline-block;
+      margin: 3px 5px 0 0;
+      color: #666;
+    }
   }
 }
 
