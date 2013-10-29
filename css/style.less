@@ -3,6 +3,8 @@
  */
 
 @errorbg: #ffe0e0;
+@trueState: #efe;
+@falseState: #fee;
 
 body {
   font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif;
@@ -78,14 +80,25 @@ header {
 
     th, td {
       border: 1px solid #aaaaaa;
-      padding: 5px;
+      padding: 5px 10px;
     }
 
     th {
       background-color: #eee;
     }
-  }
 
+    .state-true {
+      background-color: @trueState;
+    }
+
+    .state-false {
+      background-color: @falseState;
+    }
+
+    tbody tr:hover {
+      background-color: #ffffff;
+    }
+  }
 }
 
 .help-keys {
