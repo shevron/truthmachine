@@ -177,9 +177,9 @@ TruthMachine.prototype.generateTable = function()
     for (var perms = Math.pow(2, bits) - 1; perms >= 0; perms--) {
         // Set values for each var
         var row = [];
-        for (var i = 0; i < bits; i++) {
-            var val = !! (perms & 1 << (bits - i - 1));
-            values[this._vars[i]] = val;
+        for (var i = 1 << (bits - 1); i > 0; i = i >> 1) {
+            var val = !! (perms & i);
+            values[this._vars[bits - i]] = val;
             row.push(val);
         }
         // Compute result for row
