@@ -37,12 +37,16 @@ header h2 {
 #main-calculator #main-links {
   clear: both;
   text-align: left;
-  font-size: 10pt;
+  font-size: 11pt;
 }
 #main-calculator #main-links a {
   display: inline-block;
   margin: 3px 5px 0 0;
   color: #666;
+}
+#main-calculator #main-links code {
+  border-bottom: 1px dashed #666;
+  cursor: default;
 }
 .error-pre {
   -webkit-border-radius: 10px;
