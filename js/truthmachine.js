@@ -48,7 +48,12 @@ $(document).ready(function()
             return true;
         }
         return false;
-    })
+    });
+
+    // Scroll to panels when they are opened
+    $(".panel-collapse").on('shown.bs.collapse', function() {
+        $("html, body").animate({ scrollTop: $(this).parent().offset().top }, 1000);
+    });
 });
 
 /**
