@@ -115,6 +115,7 @@ function renderTruthTable(container, table)
         var tr = $('<tr></tr>');
         for (var j = 0; j < cols; j++) {
             var td = $('<td></td>').text(table[i][j] ? 'TRUE' : 'FALSE');
+            td.addClass(table[i][j] ? 'state-true' : 'state-false')
             tr.append(td);
         }
         tr.addClass(table[i][cols - 1] ? 'state-true' : 'state-false');
