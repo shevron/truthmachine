@@ -2,21 +2,33 @@
  * Created by shahar on 10/27/13.
  */
 
+/**
+ * Map Operator codes to logic symbols
+ */
+
+var operatorMap = {
+    "CON": "•",
+    "DIS": "∨",
+    "IMP": "⊃",
+    "EQV": "≡",
+    "NEG": "~"
+};
 
 /**
  * Map keyboard characters to logic symbols
  */
 var symbolMap = {
-    ".": "•",
-    "*": "•",
-    "&": "•",
-    "v": "∨",
-    "V": "∨",
-    "+": "∨",
-    "|": "∨",
-    ">": "⊃",
-    "=": "≡",
-    "!": "~"
+    ".": operatorMap.CON,
+    "*": operatorMap.CON,
+    "&": operatorMap.CON,
+    "v": operatorMap.DIS,
+    "V": operatorMap.DIS,
+    "+": operatorMap.DIS,
+    "|": operatorMap.DIS,
+    ">": operatorMap.IMP,
+    "=": operatorMap.EQV,
+    "!": operatorMap.NEG,
+    "~": operatorMap.NEG
 };
 
 $(document).ready(function()
