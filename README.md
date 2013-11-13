@@ -34,7 +34,7 @@ symbols (yes, you may be used to different ones):
  - ≡ Equivalence
  - ⊃ Implication
 
-Whoever, the lexer/parser is based on [Jison](http://zaach.github.io/jison/) so it
+The lexer/parser is based on [Jison](http://zaach.github.io/jison/) so it
 should be relatively easy to add support for additional logical operators, as
 long as they are describable as a finite series of boolean arithmetic operations :P
 
@@ -42,17 +42,17 @@ long as they are describable as a finite series of boolean arithmetic operations
 CONTRIBUTE
 ----------
 Want to help out? See the list of [tasks and bugs](https://github.com/shevron/truthmachine/issues).
-If you're a programme, fork the project and fix some of them. If you're one of those
+If you're a programmer, fork the project and fix some of them. If you're one of those
 people who like to tell other people what to do or give them helpful advice (that's
-not necessarily a bad thing), you can create some features requests as well.
+not necessarily a bad thing), you can create some feature requests as well.
 
 
 LICENSE
 -------
 TruthMachine is distributed under the terms of the New BSD License. That means
-its free software - you are welcome to use it for any purpose with no strings
-attached (almost). You are more than encouraged to contribute. See
-[LICENSE](https://github.com/shevron/truthmachine/blob/master/LICENSE.md)
+it's free software - you are welcome to use it for any purpose with (almost) no
+strings attached. You are more than encouraged to contribute. See
+[LICENSE.md](https://github.com/shevron/truthmachine/blob/master/LICENSE.md)
 for licensing details.
 
  (c) 2013 Shahar Evron, all rights reserved

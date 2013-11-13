@@ -2,21 +2,33 @@
  * Created by shahar on 10/27/13.
  */
 
+/**
+ * Map Operator codes to logic symbols
+ */
+
+var operatorMap = {
+    "CON": "•",
+    "DIS": "∨",
+    "IMP": "⊃",
+    "EQV": "≡",
+    "NEG": "~"
+};
 
 /**
  * Map keyboard characters to logic symbols
  */
 var symbolMap = {
-    ".": "•",
-    "*": "•",
-    "&": "•",
-    "v": "∨",
-    "V": "∨",
-    "+": "∨",
-    "|": "∨",
-    ">": "⊃",
-    "=": "≡",
-    "!": "~"
+    ".": operatorMap.CON,
+    "*": operatorMap.CON,
+    "&": operatorMap.CON,
+    "v": operatorMap.DIS,
+    "V": operatorMap.DIS,
+    "+": operatorMap.DIS,
+    "|": operatorMap.DIS,
+    ">": operatorMap.IMP,
+    "=": operatorMap.EQV,
+    "!": operatorMap.NEG,
+    "~": operatorMap.NEG
 };
 
 $(document).ready(function()
@@ -103,6 +115,7 @@ function renderTruthTable(container, table)
         var tr = $('<tr></tr>');
         for (var j = 0; j < cols; j++) {
             var td = $('<td></td>').text(table[i][j] ? 'TRUE' : 'FALSE');
+            td.addClass(table[i][j] ? 'state-true' : 'state-false')
             tr.append(td);
         }
         tr.addClass(table[i][cols - 1] ? 'state-true' : 'state-false');
